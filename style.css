@@ -1,0 +1,72 @@
+/* Base styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 2rem;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+/* Clocks grid */
+#clocks-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* Individual clock box */
+.clock {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  width: 220px;
+  transition: transform 0.2s;
+}
+
+.clock:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive text */
+.clock .zone {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.clock .time {
+  font-size: 1.8rem;
+  margin-bottom: 0.25rem;
+}
+
+.clock .tz-label {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Mobile optimizations */
+@media (max-width: 600px) {
+  #clocks-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .clock {
+    width: 90%;
+  }
+}
