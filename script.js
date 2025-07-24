@@ -1,11 +1,12 @@
-// List of zones to display — add/remove as needed
+// List of zones to display
 const timeZones = [
-  { name: "Montana", zone: "America/Denver" },
   { name: "Arizona", zone: "America/Phoenix" },
   { name: "California", zone: "America/Los_Angeles" },
+  { name: "Hawaii", zone: "Pacific/Honolulu" },
   { name: "Louisiana", zone: "America/Chicago" },
-  { name: "Oregon", zone: "America/Los_Angeles" },
-  { name: "Minnesota", zone: "America/Chicago" }
+  { name: "Minnesota", zone: "America/Chicago" },
+  { name: "Montana", zone: "America/Denver" },
+  { name: "Oregon", zone: "America/Los_Angeles" }
 ];
 
 function buildClocks() {
